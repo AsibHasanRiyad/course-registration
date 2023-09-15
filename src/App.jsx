@@ -1,13 +1,13 @@
 import './App.css'
+import Card from './components/Card/Card'
 import Header from './components/Header/Header'
-import Home from './components/Home/Home'
 
 function App() {
 
   return (
     <div className=' mx-16'>
       <Header></Header>
-      <Home></Home>
+      <Card></Card>
     </div>
   )
 }
