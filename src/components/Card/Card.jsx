@@ -4,19 +4,40 @@ import Cart from '../Cart/Cart';
 
 const Card = () => {
     const [courses , setCourses] = useState([]);
-    const [selected, setSelected] = useState([])
-    // const [totalPrice, setTotalPrice] = useState(0);
+    const [selected, setSelected] = useState([]);
+    const [credit, setCredit] = useState(0)
+    const [price, setPrice] = useState(0)
     useEffect(() =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCourses(data))
     },[])
-    const handelSelectButton = (title) =>{
-          const allSelected =[...selected,title];
-          setSelected(allSelected)
+    const handelSelectButton = (eachCard) =>{
+        let total = eachCard.price;
+        let selectedCredit = eachCard.credit;
+        // console.log(eachCard.price);
+        // console.log(selected);
+        const isSelected = selected.find(select => select.id == eachCard.id) ;
+        if (isSelected) {
+            alert('Already selected')
+        }
+        else{
+            selected.forEach(sPrice => total = sPrice.price + total )
+            if (credit > 20) {
+                alert('Max credit 20')
+            }
+            else{
+
+                selected.forEach(sCredit => selectedCredit = sCredit.credit + selectedCredit )
+                setCredit(selectedCredit)
+                const allSelected =[...selected,eachCard];
+                setSelected(allSelected)
+                setPrice(total)
+            }
+        }
 
     }
-    console.log(selected);
+    // console.log(selected);
     return (
         <div className='flex flex-col lg:flex-row gap-5'>
 
@@ -49,7 +70,7 @@ const Card = () => {
             {/* card div end */}
 
             <div className=' w-full  lg:w-[22%]'>
-                <Cart selected={selected} ></Cart>
+                <Cart credit={credit} price={price} selected={selected} ></Cart>
             </div>
 
         </div>
