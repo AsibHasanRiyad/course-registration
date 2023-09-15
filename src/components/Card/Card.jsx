@@ -4,11 +4,19 @@ import Cart from '../Cart/Cart';
 
 const Card = () => {
     const [courses , setCourses] = useState([]);
+    const [selected, setSelected] = useState([])
+    // const [totalPrice, setTotalPrice] = useState(0);
     useEffect(() =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCourses(data))
     },[])
+    const handelSelectButton = (title) =>{
+          const allSelected =[...selected,title];
+          setSelected(allSelected)
+
+    }
+    console.log(selected);
     return (
         <div className='flex flex-col lg:flex-row gap-5'>
 
@@ -31,7 +39,7 @@ const Card = () => {
                             </p>
                         </div>
                         <div className="text-center">
-                        <button className="w-full py-2  bg-[#2F80ED]  rounded-lg text-white font-semibold text-base mt-5">Select</button>
+                        <button onClick={() => handelSelectButton(course)} className="w-full py-2  bg-[#2F80ED]  rounded-lg text-white font-semibold text-base mt-5">Select</button>
                         </div>
                     </div>
                     </div>
@@ -41,7 +49,7 @@ const Card = () => {
             {/* card div end */}
 
             <div className=' w-full  lg:w-[22%]'>
-                <Cart></Cart>
+                <Cart selected={selected} ></Cart>
             </div>
 
         </div>
