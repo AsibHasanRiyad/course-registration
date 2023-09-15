@@ -7,32 +7,36 @@ const Card = () => {
     const [selected, setSelected] = useState([]);
     const [credit, setCredit] = useState(0)
     const [price, setPrice] = useState(0)
+    const [remaining, setRemaining] = useState(20)
     useEffect(() =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCourses(data))
     },[])
     const handelSelectButton = (eachCard) =>{
+        // selected.forEach(sCredit => selectedCredit = sCredit.credit + selectedCredit )
         let total = eachCard.price;
         let selectedCredit = eachCard.credit;
         // console.log(eachCard.price);
         // console.log(selected);
         const isSelected = selected.find(select => select.id == eachCard.id) ;
         if (isSelected) {
-            alert('Already selected')
+           return alert('Already selected')
         }
         else{
+            selected.forEach(sCredit => selectedCredit = sCredit.credit + selectedCredit )
             selected.forEach(sPrice => total = sPrice.price + total )
-            if (credit > 20) {
-                alert('Max credit 20')
+            const remaining = 20 - selectedCredit;
+            if (remaining < 0) {
+            return alert('Max credit 20')
             }
             else{
 
-                selected.forEach(sCredit => selectedCredit = sCredit.credit + selectedCredit )
                 setCredit(selectedCredit)
                 const allSelected =[...selected,eachCard];
                 setSelected(allSelected)
                 setPrice(total)
+                setRemaining(remaining)
             }
         }
 
@@ -70,7 +74,7 @@ const Card = () => {
             {/* card div end */}
 
             <div className=' w-full  lg:w-[22%]'>
-                <Cart credit={credit} price={price} selected={selected} ></Cart>
+                <Cart remaining={remaining} credit={credit} price={price} selected={selected} ></Cart>
             </div>
 
         </div>
