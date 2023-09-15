@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "course_title": "Introduction to C Programming",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 49,
+      "credit": 3,
+      "image": "https://i.ibb.co/8gLhgVy/Rectangle-2-1.png"
+    },
+    {
+      "id": 2,
+      "course_title": "Introduction to Algorithms",
+      "details": "Explore the world of data science with hands-on exercises in data analysis and visualization.",
+      "price": 59,
+      "credit": 4,
+      "image": "https://i.ibb.co/MSJbt1G/Rectangle-2-2.png"
+    },
+    {
+      "id": 3,
+      "course_title": "Introduction to C++ for DSA",
+      "details": "Explore the world of data science with hands-on exercises in data analysis and visualization.",
+      "price": 79,
+      "credit": 5,
+      "image": "https://i.ibb.co/k1GVQ2j/Rectangle-2-3.png"
+    },
+    {
+      "id": 4,
+      "course_title": "Basic Data Structures",
+      "details": "Dive deep into machine learning algorithms and build predictive models.",
+      "price": 99,
+      "credit": 6,
+      "image": "https://i.ibb.co/x3w24yZ/Rectangle-2-4.png"
+    },
+    {
+      "id": 5,
+      "course_title": "Introduction to OOP Python",
+      "details": "Learn digital marketing strategies, SEO, and social media marketing tactics.",
+      "price": 65,
+      "credit": 4,
+      "image": "https://i.ibb.co/W2K4XVZ/Rectangle-2-5.png"
+    },
+    {
+      "id": 6,
+      "course_title": "Software Engineering",
+      "details": "Discover how AI is transforming the healthcare industry with real-world case studies.",
+      "price": 89,
+      "credit": 6,
+      "image": "https://i.ibb.co/qJ54Q5B/Rectangle-2-6.png"
+    },
+    {
+      "id": 7,
+      "course_title": "AWS, Cloud Computing",
+      "details": "Master the art of financial planning, budgeting, and investment strategies.",
+      "price": 74,
+      "credit": 5,
+      "image": "https://i.ibb.co/YbypsbC/Rectangle-2.png"
+    },
+    {
+      "id": 8,
+      "course_title": "Database (MySQL)",
+      "details": "Unlock your creativity with graphic design principles and Adobe Creative Suite.",
+      "price": 59,
+      "credit": 4,
+      "image": "https://i.ibb.co/Z8rLNWy/Rectangle-3-1.png"
+    },
+    {
+      "id": 9,
+      "course_title": "Problem-Solving Part",
+      "details": "Protect your digital assets by learning essential cybersecurity practices.",
+      "price": 79,
+      "credit": 5,
+      "image": "https://i.ibb.co/9t94CG3/Rectangle-3.png"
+    }
+  ]
+  
