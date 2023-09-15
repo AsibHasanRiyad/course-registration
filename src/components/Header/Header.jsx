@@ -1,7 +1,7 @@
 const Header = () => {
     return (
-        <div>
-            <h1>Course Registration</h1>
+        <div className=" text-center py-12">
+            <h1 className=" text-4xl font-bold">Course Registration</h1>
         </div>
     );
 };
