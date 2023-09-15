@@ -8,7 +8,7 @@
       "price": 49,
       "credit": 3,
       "image": "https://i.ibb.co/8gLhgVy/Rectangle-2-1.png",
-      "details": "Master the fundamentals of C programming, including variables, control structures, and functions. Ideal for beginners in coding."
+      "details": "Master the fundamentals of C programming, including variables, control structures, and functions. "
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "price": 59,
       "credit": 4,
       "image": "https://i.ibb.co/MSJbt1G/Rectangle-2-2.png",
-      "details": "Explore the world of algorithms, data structures, and problem-solving techniques. Suitable for aspiring programmers and computer scientists."
+      "details": "Explore the world of algorithms, data structures, and problem-solving techniques. "
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "price": 79,
       "credit": 5,
       "image": "https://i.ibb.co/k1GVQ2j/Rectangle-2-3.png",
-      "details": "Learn C++ with a focus on its application in data structures and algorithms. Essential for competitive programming and software development."
+      "details": "Learn C++ with a focus on its application in data structures and algorithms."
     },
     {
       "id": 4,
@@ -32,7 +32,7 @@
       "price": 99,
       "credit": 6,
       "image": "https://i.ibb.co/x3w24yZ/Rectangle-2-4.png",
-      "details": "Delve into the world of data structures such as arrays, linked lists, trees, and graphs. Build a strong foundation for software development."
+      "details": "Delve into the world of data structures such as arrays, linked lists, trees, and graphs. "
     },
     {
       "id": 5,
@@ -40,7 +40,7 @@
       "price": 65,
       "credit": 4,
       "image": "https://i.ibb.co/W2K4XVZ/Rectangle-2-5.png",
-      "details": "Explore object-oriented programming (OOP) principles using Python. Ideal for those transitioning to Python or OOP concepts."
+      "details": "Explore object-oriented programming (OOP) principles using Python. Ideal for those transitioning to Python."
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
       "price": 89,
       "credit": 6,
       "image": "https://i.ibb.co/qJ54Q5B/Rectangle-2-6.png",
-      "details": "Learn the entire software development lifecycle, including requirements, design, coding, testing, and maintenance. Prepare for real-world software projects."
+      "details": "Learn the entire software development lifecycle, including coding and maintenance. "
     },
     {
       "id": 7,
@@ -56,7 +56,7 @@
       "price": 74,
       "credit": 5,
       "image": "https://i.ibb.co/YbypsbC/Rectangle-2.png",
-      "details": "Gain expertise in Amazon Web Services (AWS) and cloud computing. Learn to deploy, manage, and scale applications on the cloud."
+      "details": "Gain expertise in Amazon Web Services (AWS) and cloud computing. Learn to deploy."
     },
     {
       "id": 8,
@@ -64,7 +64,7 @@
       "price": 59,
       "credit": 4,
       "image": "https://i.ibb.co/Z8rLNWy/Rectangle-3-1.png",
-      "details": "Become proficient in MySQL, a popular relational database management system. Learn SQL, database design, and administration."
+      "details": "Become proficient in MySQL, a popular relational database management system."
     },
     {
       "id": 9,
@@ -72,6 +72,6 @@
       "price": 79,
       "credit": 5,
       "image": "https://i.ibb.co/9t94CG3/Rectangle-3.png",
-      "details": "Enhance your problem-solving skills through coding challenges, algorithms, and data structures. Perfect for competitive programming enthusiasts."
+      "details": "Enhance your problem-solving skills through coding challenges, algorithms, and data structures."
     }
 ]
