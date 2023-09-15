@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaDollarSign, FaBookOpen } from 'react-icons/fa';
+import Cart from '../Cart/Cart';
 
 const Card = () => {
     const [courses , setCourses] = useState([]);
@@ -9,14 +10,14 @@ const Card = () => {
         .then(data => setCourses(data))
     },[])
     return (
-        <div className=' flex '>
+        <div className='flex flex-col lg:flex-row gap-5'>
 
             {/* card section  div start*/}
-            <div className=' w-[80%] grid grid-cols-3 gap-6'>
+            <div className='w-full lg:w-[78%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 pb-8'>
                     {
                         courses.map(course =>
-                            <div key={course.id} className=" p-4 rounded-xl w-[320px] bg-white">
-                    <figure className="">
+                            <div key={course.id} className=" p-4 rounded-xl bg-white">
+                    <figure className="flex justify-center w-full">
                         <img src={course.image} alt="Shoes" className="rounded-xl" />
                     </figure>
                     <div className=" items-center text-justify">
@@ -39,8 +40,8 @@ const Card = () => {
             </div>
             {/* card div end */}
 
-            <div className=' w-[20%]'>
-                <h1 className='text-5xl'>Cart</h1>
+            <div className=' w-full  lg:w-[22%]'>
+                <Cart></Cart>
             </div>
 
         </div>
