@@ -19,11 +19,5 @@ useEffect Hook is used for handling side effects in functional components. It ca
  </li>
 </ul>
 
-<<<<<<< HEAD
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-- Hello
-=======
 <h3>Live Site </h3>
 <a href="https://6505396b1b7ad962cb86d441--dazzling-mermaid-7945e1.netlify.app/ ">Course Registration</a>
->>>>>>> c104594706da1fd7be66b6eda59dd4b57c234d33
