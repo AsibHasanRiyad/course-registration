@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { FaDollarSign, FaBookOpen } from 'react-icons/fa';
 import Cart from '../Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Card = () => {
     const [courses , setCourses] = useState([]);
@@ -21,14 +23,32 @@ const Card = () => {
         // console.log(selected);
         const isSelected = selected.find(select => select.id == eachCard.id) ;
         if (isSelected) {
-           return alert('Already selected')
+           toast.info('You have already selected this course', {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            })
         }
         else{
             selected.forEach(sCredit => selectedCredit = sCredit.credit + selectedCredit )
             selected.forEach(sPrice => total = sPrice.price + total )
             const remaining = 20 - selectedCredit;
             if (remaining < 0) {
-            return alert('Max credit 20')
+            toast.error('The credit limit is capped at 20', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark"
+                })
             }
             else{
 
@@ -65,6 +85,12 @@ const Card = () => {
                         </div>
                         <div className="text-center">
                         <button onClick={() => handelSelectButton(course)} className="w-full py-2  bg-[#2F80ED]  rounded-lg text-white font-semibold text-base mt-5">Select</button>
+                        <ToastContainer 
+                        toastStyle={{
+                            backgroundColor:'black',
+                            borderRadius:'10px'
+                        }}
+                        />
                         </div>
                     </div>
                     </div>
