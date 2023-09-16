@@ -8,14 +8,14 @@ Coursera. Three key Features of this project are written below
 
 <h1>Managing state</h1>
 Here I have used 2 states which by default build in React.
-<ol>
- <li> <h3> useState </h3>
+<ul>
+ <li> useState
 By using useState I have stored the main component data that I want to send to its child component and pass it to the child component by using props
  </li>
  <li>
 useEffect
 useEffect Hook is used for handling side effects in functional components. It can be used for data fetching, DOM manipulation, and subscriptions. I have used it for fetching my fake data from the data.json folder
  </li>
-</ol>
+</ul>
 
 #Live Site
