@@ -6,7 +6,7 @@ Coursera. Three key Features of this project are written below
 - Students can't add the same course multiple times and it'll give them a warning by beautiful tosify
 - Students can take a maximum of 20 credits Hours after exceeding 20hr it will give a warning with toast
 
-#Managing state
+<h1>Managing state</h1>
 Here I have used 2 states which by default build in React.
 - useState
 By using useState I have stored the main component data that I want to send to its child component and pass it to the child component by using props
