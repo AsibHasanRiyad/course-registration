@@ -20,4 +20,4 @@ useEffect Hook is used for handling side effects in functional components. It ca
 </ul>
 
 <h3>Live Site </h3>
-<a href="[url](https://6505396b1b7ad962cb86d441--dazzling-mermaid-7945e1.netlify.app/ )https://6505396b1b7ad962cb86d441--dazzling-mermaid-7945e1.netlify.app/ ">Course Registration</a>
+<a href="https://6505396b1b7ad962cb86d441--dazzling-mermaid-7945e1.netlify.app/ ">Course Registration</a>
