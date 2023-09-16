@@ -51,6 +51,16 @@ const Card = () => {
                 })
             }
             else{
+                toast.success('Course Added', {
+                    position: "top-right",
+                    autoClose: 1500,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    })
 
                 setCredit(selectedCredit)
                 const allSelected =[...selected,eachCard];
