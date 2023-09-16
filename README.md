@@ -9,7 +9,7 @@ Coursera. Three key Features of this project are written below
 <h1>Managing state</h1>
 Here I have used 2 states which by default build in React.
 <ul>
- <li> useState
+ <li>
   <h3> useState </h3>
 By using useState I have stored the main component data that I want to send to its child component and pass it to the child component by using props
  </li>
